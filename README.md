@@ -1,24 +1,24 @@
-# vue-first
+# 第一个Vue项目
 
-## Project setup
-```
+## 项目安装
+```shell
 yarn install
 ```
 
-### Compiles and hot-reloads for development
-```
+### 开发环境编译及热加载运行
+```shell
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
+### 生产环境编译打包
+```shell
 yarn build
 ```
 
-### Lints and fixes files
-```
+### 分析检查
+```shell
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 自定义配置
+参考 [Configuration Reference](https://cli.vuejs.org/config/).
