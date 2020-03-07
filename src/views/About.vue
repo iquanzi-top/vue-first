@@ -1,21 +1,28 @@
 <template>
 <div class="about" v-cloak v-on:click="hideTooltip">
   <!-- <h1>这是关于我们页面</h1> -->
-  <van-button type="primary">主要按钮</van-button>
+
   <div class="tooltip" v-on:click.stop v-if="show_tooltip">
     <input type="text" v-model="text_content"/>
   </div>
   <p v-on:click.stop="toggleTooltip">{{ text_content }}</p>
 
-  <button v-on:click="show = !show">点我</button>
+  <button class="button" v-on:click="show = !show">点我</button>
   <transition name="slide-fade">
     <p v-if="show">菜鸟先飞--很多时候，菜鸟先出发，也不一定能够抵达重点。</p>
   </transition>
+  <div class="btngroup">
+    <van-button type="primary">主要按钮</van-button>&nbsp;&nbsp;
+    <van-button type="info">信息按钮</van-button>&nbsp;&nbsp;
+    <van-button type="warning">警告按钮</van-button>&nbsp;&nbsp;
+    <van-button type="info" plain>朴素按钮</van-button>
+  </div>
 </div>
 </template>
 
 <script>
 import {Button} from "vant";
+import 'vant/lib/index.css';
 
 export default {
   name: 'About',
